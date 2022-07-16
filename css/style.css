@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+body {
+  font-family: 'Quicksand';
+  color: #fff;
+  background: url('../img/showcase.jpg') no-repeat center center fixed;
+  height: 100vh;
+}
+
+.container {
+  height: 80vh;
+}
+
+img {
+  width: 8rem;
+}
+
+.showcase h2 {
+  font-weight: 600;
+}
+
+.showcase h2 span {
+  color: #ff4444;
+}
+
+.showcase p {
+  font-size: 1.1rem;
+}
+
+.showcase p span {
+  color: #ff4444;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.btn__actions {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.btn__actions a {
+  font-weight: 600;
+  font-size: .9rem;
+  padding: .6rem;
+  border-radius: 50px;
+  border: none;
+}
+
+.btn__actions .signin {
+  background-color: #0099CC;
+  border: none;
+}
+.btn__actions .signin:hover {
+  background-color: #485fc7;
+}
+
+.btn__actions .login {
+  background-color: #00d1b2;
+  border: none;
+}
+.btn__actions .login:hover {
+  background-color: #33afa3;
+}
+
+.btn__actions .follow {
+  background-color: #ffbb33;
+  border: none;
+}
+.btn__actions .follow:hover {
+  background-color: #e9ae3a;
+  border: none;
+}
+
+.btn__actions .icon {
+  font-size: 1rem;
+  margin-right: .25rem;
+}
+
+@media screen and (max-width: 700px) {
+  /* .btn__actions {
+    display: flex;
+    flex-direction: column;
+  } */
+}
+
+@media screen and (max-width: 920px) {
+  .card {
+    width: 100% !important;
+  }
+}
