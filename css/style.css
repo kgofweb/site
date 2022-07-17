@@ -48,12 +48,14 @@ img {
 }
 
 .btn__actions .signin {
+  position: relative;
   background-color: #0099CC;
   border: none;
 }
 .btn__actions .signin:hover {
   background-color: #485fc7;
 }
+
 
 .btn__actions .login {
   background-color: #00d1b2;
@@ -77,15 +79,73 @@ img {
   margin-right: .25rem;
 }
 
-@media screen and (max-width: 700px) {
-  /* .btn__actions {
-    display: flex;
-    flex-direction: column;
-  } */
+/* ============ Animation btn ============ */
+.button {
+  position: relative;
+  color: #fff;
+  padding: .9rem 2.20rem;
+  transition: .4s;
 }
 
-@media screen and (max-width: 920px) {
-  .card {
-    width: 100% !important;
-  }
+.button__text {
+  position: relative;
+  z-index: 10;
+}
+
+.button img {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  pointer-events: none;
+  transition: .6s;
+  opacity: 0;
+}
+
+/* Move 3D geometric elements */
+.button__cone {
+  width: 18px;
+  transform: translate(-25px, -6px) rotate(55deg);
+  filter: blur(.5px);
+}
+
+.button__torus {
+  width: 38px;
+  transform: translate(7px, -14px) rotate(80deg);
+}
+
+.button__icosahedron {
+  width: 36px;
+  transform: translate(34px, -4px) rotate(-45deg);
+  filter: blur(.9px);
+}
+
+.button__sphere {
+  width: 30px;
+  transform: translate(-5px, 15px) rotate(40deg);
+}
+
+/* View shadow gradient */
+.button:hover::after {
+  opacity: 1;
+}
+
+/* View 3D geometric elements */
+.button:hover img {
+  opacity: 1;
+}
+
+.button:hover .button__cone {
+  transform: translate(-38px, -10px) scale(1.2);
+}
+
+.button:hover .button__torus {
+  transform: translate(7px, -32px) scale(1.1);
+}
+
+.button:hover .button__icosahedron {
+  transform: translate(50px, -20px) scale(1.1);
+}
+
+.button:hover .button__sphere {
+  transform: translate(-14px, 20px) scale(1.1);
 }
