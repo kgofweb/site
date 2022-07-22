@@ -28,7 +28,7 @@ img {
 .btn__actions {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
+  gap: 20px;
 }
 
 .btn__actions a {
@@ -70,7 +70,7 @@ img {
 .btn__actions .login a {
   background-color: #7aeab2 !important; 
 }
-.btn__actions .login img {
+.btn__actions .signin img {
   max-width: 5.5rem; 
 }
 .btn__actions .tracker img {
