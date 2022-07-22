@@ -20,15 +20,15 @@ labelChecked.forEach(el => {
 // ============== Scroll Reveal ============== //
 const sr = ScrollReveal({
   distance: '60px',
-  duration: 1500,
+  duration: 1500
 })
 
 sr.reveal(`.logo`, { origin: 'top', delay: 300 })
 sr.reveal(`.title`, { origin: 'bottom', delay: 500 })
-sr.reveal(`.link__1`, { origin: 'top', delay: 600 })
-sr.reveal(`.link__3`, { origin: 'top', delay: 600 })
-sr.reveal(`.link__2`, { origin: 'bottom', delay: 700 })
-sr.reveal(`.link__4`, { origin: 'bottom', delay: 700 })
+sr.reveal(`.transaction`, { origin: 'top', delay: 600 })
+sr.reveal(`.tracker`, { origin: 'bottom', delay: 700 })
+sr.reveal(`.signin`, { origin: 'top', delay: 800 })
+sr.reveal(`.login`, { origin: 'bottom', delay: 900 })
 
 
 // ============== Text Writer ============== //

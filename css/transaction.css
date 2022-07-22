@@ -14,7 +14,6 @@ body {
   text-decoration: none;
 }
 
-
 .multisteps-form__progress {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
@@ -28,18 +27,18 @@ body {
   transition-delay: 0s;
   padding-top: 20px;
   color: #fff;
-  text-indent: -9999px;
   border: none;
   background-color: transparent;
   outline: none !important;
   cursor: pointer;
 }
 
-@media (min-width: 500px) {
+@media (max-width: 290px) {
   .multisteps-form__progress-btn {
-    text-indent: 0;
+    text-indent: -9999px;
   }
 }
+
 .multisteps-form__progress-btn:before {
   position: absolute;
   top: 0;
@@ -60,6 +59,7 @@ body {
   z-index: 3;
 }
 .multisteps-form__progress-btn:after {
+  content: '';
   position: absolute;
   top: 5px;
   left: calc(-50% - 13px / 2);
@@ -70,7 +70,6 @@ body {
   display: block;
   width: 100%;
   height: 2px;
-  content: '';
   background-color: currentColor;
   z-index: 1;
 }
