@@ -70,6 +70,12 @@ img {
 .btn__actions .login a {
   background-color: #7aeab2 !important; 
 }
+.btn__actions .login img {
+  max-width: 5.5rem; 
+}
+.btn__actions .tracker img {
+  max-width: 6rem; 
+}
 
 .btn__actions .icon {
   font-size: 1rem;
