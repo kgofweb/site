@@ -2,7 +2,7 @@
 
 body {
   font-family: 'Quicksand';
-  color: #fff;
+  /* color: #fff; */
   background: url('../img/showcase.jpg') no-repeat center center/cover fixed;
   height: 100vh;
 }
@@ -48,8 +48,7 @@ img {
 }
 
 .btn__actions .card {
-  max-width: 15rem; 
-  max-height: 13.8rem;
+  max-height: 13.8rem !important;
   border-radius: 1rem;
   padding: 0 !important;
 }
@@ -71,7 +70,7 @@ img {
   background-color: #7aeab2 !important; 
 }
 .btn__actions .signin img {
-  max-width: 5.5rem; 
+  max-width: 5rem; 
 }
 .btn__actions .tracker img {
   max-width: 6rem; 
