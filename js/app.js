@@ -2,7 +2,7 @@
 const modalBox = document.querySelector('.modal')
 const codeCountry = document.getElementById('code__country')
 const labelChecked = document.querySelectorAll('.modal-body input')
-const textAnim = document.querySelector('h2')
+const textAnim = document.querySelector('h3')
 
 // Event Listener
 labelChecked.forEach(el => {
@@ -44,5 +44,8 @@ new Typewriter(textAnim, {
 .pauseFor(1000)
 .deleteChars(49)
 .pauseFor(800)
-.typeString('Conçu par les Africains, pour les Africains')
+.typeString('Conçu par les <span style="color: #ff4444;">Africains</span>, pour les <span style="color: #ff4444;">Africains</span>')
+.pauseFor(800)
+.deleteChars(49)
+.typeString('Bienvenue sur Chap<span style="color: #ff4444;">Money</span>')
 .start()

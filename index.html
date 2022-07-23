@@ -1,104 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Transférer de l'argent n'a jamais été aussi facile avec ChapMoney. C'est simple, rapide et fiable. Transférer et récevez votre argent à l'instant.">
+  <meta name="description"
+    content="Transférer de l'argent n'a jamais été aussi facile avec ChapMoney. C'est simple, rapide et fiable. Transférer et récevez votre argent à l'instant.">
   <!-- CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    crossorigin="anonymous">
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- Link Favicon -->
   <link rel="shortcut icon" href="./img/favicon/link-logo.png" type="image/x-icon">
   <!-- My CSS -->
   <link rel="stylesheet" href="./css/style.css">
   <title>ChapMoney</title>
 </head>
+
 <body>
   <div class="container d-flex align-items-center justify-content-center flex-column">
     <!-- =========== Header =========== -->
-    <div class="logo mt-4">
-      <a href=""><img src="./img/logo.png" alt="ChapMoney"></a>
+    <div class="logo mt-5">
+      <a href="./index.html"><img src="./img/logo.png" alt="ChapMoney"></a>
     </div>
 
     <!-- =========== Main =========== -->
-    <div class="showcase text-center">
-      <div class="title">
-        <h2 class="mt-3"></h2>
-        <p>Transférer de l’argent n’a jamais été aussi <span>facile</span>, <span>rapide</span> et <span>fiable</span></p>
-      </div>
 
-      <!-- =========== Actions =========== -->
-      <div class="btn__actions mt-5">
-        <!-- Box 1 -->
-        <div class="box__1">
-          <div class="transaction card text-white bg-danger mb-3">
-            <div class="card-body text-start">
-              <h6 class="text-start">
-                <i class="icon fas fa-exchange-alt"></i>
-                <b>Transaction</b>
-              </h6>
-              <div>
-                <img src="./img/home-btn-2.webp" alt="ChapMoney">
-              </div>
-              <a href="./transaction.html" class="btn btn-danger float-end">
-                <i class="fa-solid fa-angle-right"></i>
-              </a>
-            </div>
-          </div>
-
-          <div class="tracker card text-white bg-danger mb-3">
-            <div class="card-body text-start">
-              <h6 class="text-start">
-                <i class="icon fa-solid fa-location-crosshairs"></i>
-                <b>Tracker</b>
-              </h6>
-              <div>
-                <img src="./img/tracker.webp" alt="ChapMoney">
-              </div>
-              <a href="./tracker.html" class="btn btn-warning text-white float-end">
-                <i class="fa-solid fa-angle-right"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-        <!-- Box 2 -->
-        <div class="box__2">
-          <div class="signin card text-white bg-primary mb-3">
-            <div class="card-body text-start">
-              <h6 class="text-start">
-                <i class="icon fas fa-user"></i>
-                <b>S'inscrire</b>
-              </h6>
-              <div>
-                <img src="./img/login-img.webp" alt="ChapMoney">
-              </div>
-              <a href="./signup.html" class="btn btn-primary text-white float-end">
-                <i class="fa-solid fa-angle-right"></i>
-              </a>
-            </div>
-          </div>
-          <div class="login card text-white bg-success mb-3">
-            <div class="card-body text-start">
-              <h6 class="text-start">
-                <i class="icon fas fa-sign-in-alt "></i>
-                <b>Connexion</b>
-              </h6>
-              <div>
-                <img src="./img/signUp.webp" alt="ChapMoney">
-              </div>
-              <a href="./login.html" class="btn btn-success text-white float-end">
-                <i class="fa-solid fa-angle-right"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
+    <div class="title text-center">
+      <h3 class="mt-3"></h3>
+      <p>Transférer de l’argent n’a jamais été aussi <span>facile</span>, <span>rapide</span> et <span>fiable</span></p>
     </div>
+
+    <main class="showcase">
+      <!-- =========== Actions =========== -->
+      <div class="btn__actions mt-4">
+        <div class="row row-cols-2 justify-content-center">
+          <div class="col-sm-6" style="max-width: 17rem;">
+            <div class="card transaction text-white bg-danger mb-3">
+              <div class="card-body">
+                <h6 class="text-start">
+                  <i class="icon fas fa-exchange-alt"></i>
+                  <b>Transaction</b>
+                </h6>
+                <div>
+                  <img src="./img/home-btn-2.webp" alt="ChapMoney">
+                </div>
+                <a href="./transaction.html" class="btn btn-danger float-end">
+                  <i class="fa-solid fa-angle-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6" style="max-width: 17rem;">
+            <div class="signin card text-white bg-primary mb-3">
+              <div class="card-body text-start">
+                <h6 class="text-start">
+                  <i class="icon fas fa-user"></i>
+                  <b>S'inscrire</b>
+                </h6>
+                <div>
+                  <img src="./img/login-img.webp" alt="ChapMoney">
+                </div>
+                <a href="./signup.html" class="btn btn-primary text-white float-end">
+                  <i class="fa-solid fa-angle-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6" style="max-width: 17rem;">
+            <div class="tracker card text-white bg-danger mb-3">
+              <div class="card-body text-start">
+                <h6 class="text-start">
+                  <i class="icon fa-solid fa-location-crosshairs"></i>
+                  <b>Tracker</b>
+                </h6>
+                <div>
+                  <img src="./img/tracker.webp" alt="ChapMoney">
+                </div>
+                <a href="./tracker.html" class="btn btn-warning text-white float-end">
+                  <i class="fa-solid fa-angle-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6" style="max-width: 17rem;">
+            <div class="login card text-white bg-success mb-3 mh-100">
+              <div class="card-body text-start">
+                <h6 class="text-start">
+                  <i class="icon fas fa-sign-in-alt "></i>
+                  <b>Connexion</b>
+                </h6>
+                <div>
+                  <img src="./img/login-home.webp" alt="ChapMoney">
+                </div>
+                <a href="./login.html" class="btn btn-success text-white float-end">
+                  <i class="fa-solid fa-angle-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
   </div>
-  
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    crossorigin="anonymous"></script>
   <!-- Scroll Reveal -->
   <script src="./js/scrollreveal.min.js"></script>
   <!-- Text Writer -->
@@ -106,4 +117,5 @@
   <!-- My JS -->
   <script src="./js/app.js"></script>
 </body>
+
 </html>

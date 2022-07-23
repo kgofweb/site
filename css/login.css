@@ -14,10 +14,6 @@ body {
   text-decoration: none;
 }
 
-h2 {
-  color: #00d1b2;
-}
-
 .card {
   background-color: #f7f7f7;
 }
@@ -28,16 +24,12 @@ form a {
 }
 
 form label {
-  color: #00d1b2;
   font-weight: 600;
 }
 
-hr {
-  color: #00d1b2;
-}
-
 form .btn {
-  border-radius: 50px;
+  border-radius: 8px;
+  font-weight: 600;
 }
 
 form .login {
@@ -47,6 +39,10 @@ form .login {
 
 form .login:hover {
   background-color: #33afa3;
+}
+
+form .link span {
+  font-size: .900rem;
 }
 
 @media screen and (max-width: 920px) {
