@@ -12,9 +12,12 @@ const modeTransfert = {
 
 // DOM
 const countryOne = document.getElementById('country__one')
+const countryTwo = document.getElementById('country__two')
 const mode = document.getElementById('modeSend')
+const modeReceive = document.getElementById('modeReceive')
 
 countryOne.addEventListener('change', chooseMode)
+countryTwo.addEventListener('change', chooseModeReceive)
 
 function chooseMode() {
   // Select Value
@@ -30,5 +33,22 @@ function chooseMode() {
     let option = new Option(el, el)
     // Append child
     mode.appendChild(option)
+  })
+}
+
+function chooseModeReceive() {
+  // Select Value
+  let selectOption = modeTransfert[this.value]
+
+  // Remove old selection
+  while (modeReceive.options.length > 0) {
+    modeReceive.options.remove(0)
+  }
+
+  // From transfert mode table
+  Array.from(selectOption).forEach(function (el) {
+    let option = new Option(el, el)
+    // Append child
+    modeReceive.appendChild(option)
   })
 }
