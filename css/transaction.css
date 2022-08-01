@@ -19,7 +19,11 @@ h6 i {
 }
 
 .card-body img {
-  width: 7rem;
+  width: 9rem;
+}
+
+.card-body a i {
+  font-size: 1.5rem;
 }
 
 .card__sending,
@@ -46,4 +50,10 @@ h6 i {
 
 .btn {
   border: none !important;
+}
+
+@media screen and (max-width: 700px) {
+  .card {
+    width: 100% !important;
+  }
 }
