@@ -153,3 +153,9 @@ body {
   -webkit-transform: scale(1);
           transform: scale(1);
 }
+
+@media screen and (max-width: 768px) {
+  .card__receive {
+    width: 100% !important;
+  }
+}
