@@ -15,7 +15,14 @@ body {
 }
 
 .btn {
-  background-color: #a55eea !important;
+  background-color: hsl(148, 71%, 44%) !important;
+}
+
+span a {
+  text-decoration: none;
+}
+span a:hover {
+  text-decoration: none;
 }
 
 @media screen and (max-width: 920px) {
