@@ -8,7 +8,7 @@ body {
 }
 
 img {
-  width: 8rem;
+  width: 7rem;
 }
 
 .showcase h2 {
@@ -34,6 +34,9 @@ img {
 .transaction {
   background-color: #fe7f48 !important;
 }
+.receive {
+  background-color: #a55eea !important;
+}
 .tracker {
   background-color: #ffc048 !important;
 }
@@ -52,6 +55,9 @@ img {
 
 .btn__actions .transaction a {
   background-color: #edab8e !important; 
+}
+.btn__actions .receive a {
+  background-color: #c494f5 !important; 
 }
 .btn__actions .tracker a {
   background-color: #fcd297 !important; 
